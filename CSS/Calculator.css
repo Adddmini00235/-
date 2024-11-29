@@ -1,0 +1,52 @@
+body{
+    font-family: Arial,sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.claculator{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0,.3);
+    padding: 20px;
+}
+
+#display{
+    width: 98%;
+    height: 50px;
+    text-align: right;
+    font-size: 2em;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons{
+    display: grid ;
+    /* 定义网格容器中的列数和每列的宽度 */ 
+    grid-template-columns: repeat(4,1fr); /* 4列，每列宽度相等 */
+    gap: 15px; /* 每个按钮之间的间距为10px */
+}
+
+button{
+    background-color: #000406;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer; /* 鼠标经变为小手 */
+    transition: background-color .3s ; /* 动画过渡效果 */
+}
+
+button:hover{
+    background-color: #4b4c4c;
+}
+
+button:active{
+    background-color: #05b8e4; /* 鼠标按下颜色 */
+}

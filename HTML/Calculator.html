@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线简易计算器</title>
+    <!-- 引入外链css -->
+     <link rel="stylesheet" href=".././CSS/Calculator.css">
+</head>
+<body>
+    <!-- 定义一个主体盒子 -->
+     <div class="claculator">
+        <!-- disabled 属性使其无法手动编辑，只能通过按钮操作 -->
+        <input type="text" id="display" disabled />
+        <!-- 包含所有计算器按钮的盒子 -->
+         <div class="buttons">
+            <!-- 数字按钮和 / 法 按钮 -->
+             <!-- 追加数字 -->
+             <button class="btn" onclick="appendNumber(7)">7</button>
+             <button class="btn" onclick="appendNumber(8)">8</button>
+             <button class="btn" onclick="appendNumber(9)">9</button>
+             <!-- 选择操作 -->
+             <button class="btn" onclick="chooseOperation('/')">/</button>
+
+             <button class="btn" onclick="appendNumber(4)">4</button>
+             <button class="btn" onclick="appendNumber(5)">5</button>
+             <button class="btn" onclick="appendNumber(6)">6</button>
+             <!-- 选择操作 -->
+             <button class="btn" onclick="chooseOperation('*')">*</button>
+
+             <button class="btn" onclick="appendNumber(3)">3</button>
+             <button class="btn" onclick="appendNumber(2)">2</button>
+             <button class="btn" onclick="appendNumber(1)">1</button>
+             <!-- 选择操作 -->
+             <button class="btn" onclick="chooseOperation('-')">-</button>
+
+             <button class="btn" onclick="clearDisplay()">C</button>
+             <button class="btn" onclick="appendNumber(0)">0</button>
+             <button class="btn" onclick="calculateResult()">=</button>
+             <!-- 选择操作 -->
+             <button class="btn" onclick="chooseOperation('+')">+</button>
+         </div>
+     </div>
+
+     <!-- 引入外链js -->
+      <script src=".././JS/Calculator.js"></script>
+</body>
+</html>
